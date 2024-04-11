@@ -1,6 +1,7 @@
 # ETL-Examples
 
 I wanted to make some examples of basic ETLs with Python.
+Each example builds off of the previous, so you will see a lot of the same files.
 
 ### API_to_CSV
 
