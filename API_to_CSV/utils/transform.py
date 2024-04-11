@@ -11,7 +11,7 @@ def transform_data(data: dict):
         "feels_like": f'{convert_k_f(data.get("main").get("feels_like"))} F',
         "min": f'{convert_k_f(data.get("main").get("temp_min"))} F',
         "max": f'{convert_k_f(data.get("main").get("temp_max"))} F',
-        "humidity": data.get("main").get("humidity"),
+        "humidity": f'{data.get("main").get("humidity")}%',
         "wind_speed": data.get("wind").get("speed"),
         "sunrise": convert_timestamp(data.get("sys").get("sunrise")),
         "sunset": convert_timestamp(data.get("sys").get("sunset")),
